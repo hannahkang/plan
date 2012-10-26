@@ -14,13 +14,13 @@
 
                     // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
-                    namespace App1
+                    namespace _4PLAN
                     {
      
                         /// <summary>
                         /// A basic page that provides characteristics common to most applications.
                         /// </summary>
-                        public sealed partial class BasicPage1 : App1.Common.LayoutAwarePage
+                        public sealed partial class BasicPage1 : _4PLAN.Common.LayoutAwarePage
                         {
                             public BasicPage1()
                             {

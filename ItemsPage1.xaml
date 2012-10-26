@@ -17,7 +17,7 @@
             x:Name="itemsViewSource"
             Source="{Binding Items}"/>
 
-        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <!-- TODO: Delete this line if the key AppName is declared in 4PLAN.xaml -->
         <x:String x:Key="AppName">Classes</x:String>
     </Page.Resources>
 

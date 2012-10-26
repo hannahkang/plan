@@ -14,16 +14,19 @@ using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
-namespace _4Plan
+namespace _4PLAN
 {
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class MainPage : _4Plan.Common.LayoutAwarePage
+    public sealed partial class MainPage : _4PLAN.Common.LayoutAwarePage
     {
         public MainPage()
         {
             this.InitializeComponent();
+
+            this.NavigationCacheMode =
+                Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
 
         /// <summary>
@@ -52,6 +55,20 @@ namespace _4Plan
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             greetingOutput.Text = "Hello, " + nameInput.Text + "!";
+        }
+
+        private void Page_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame != null)
+            {
+                this.Frame.Navigate(typeof(ItemsPage1));
+
+            }
+        }
+
+        private void HyperlinkButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ItemsPage1), tb1.Text);
         }
     }
 }
