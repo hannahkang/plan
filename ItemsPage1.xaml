@@ -77,7 +77,7 @@
 
 
         <Button Content="Classes" FontSize="60" Grid.Row="1" Margin="120,80,0,459" Width="490" Height="89" />
-        <Button Content="Goals" FontSize="60" Grid.Row="1" Margin="120,191,0,349" Height="88" Width="490" />
+        <Button Content="Goals" FontSize="60" Grid.Row="1" Margin="120,191,0,349" Height="88" Width="490" BorderBrush="#33CF6B6B" Background="#FFA4EEBB" Foreground="#FF4A1D5B" Click="Goals_Click"/>
         <Button Content="Tasks" FontSize="60" Grid.Row="1" Margin="120,302,0,238" Height="88" Width="490" BorderBrush="#33CF6B6B" Background="#FFA4EEBB" Foreground="#FF4A1D5B" Click="Tasks_Click" />
 
         <VisualStateManager.VisualStateGroups>
