@@ -4,7 +4,7 @@
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:App"
+    xmlns:local="using:_4PLAN"
     xmlns:common="using:_4PLAN.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -33,8 +33,9 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            <HyperlinkButton  Click="HyperlinkButton_Click" Style="{StaticResource HomeAppBarButtonStyle}" Grid.Column="2" Margin="1108,34,0,0"  />
             <Button x:Name="backButton" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
-            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}" FontFamily="SketchFlow Print" Margin="0,0,30,30"/>
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}" FontFamily="SketchFlow Print" Margin="0,0,156,30"/>
         </Grid>
 
         <StackPanel Grid.Row="1" Margin="120,30,0,0">
@@ -45,7 +46,8 @@
             </StackPanel>
             <TextBlock x:Name="taskOutput" FontSize="24" FontFamily="Segoe"/>
         </StackPanel>
-        <CheckBox x:Name="Task1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,182,0,0" Grid.Row="1" Checked="Task1_Checked_1" Visibility="Collapsed"/>
+
+        <CheckBox x:Name="Task1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="86,183,0,0" Grid.Row="1" Checked="Task1_Checked_1" RenderTransformOrigin="-1,0.481" Visibility="Collapsed"/>
         <CheckBox x:Name="Task2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,150,0,0" Grid.Row="1" Visibility="Collapsed"/>
 
         <StackPanel Grid.Row="2" Margin="500,30,0,0">

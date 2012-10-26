@@ -66,11 +66,25 @@
               
                             }
 
+                            
+
                             private void Button_Click_2(object sender, RoutedEventArgs e)
                             {
-                                if (taskInput != null)
-                                    taskOutput.Text = taskOutput.Text + "\n" + taskInput.Text;
+                                for (int i = 0; i < 100; i++)
+                                {
+                                    CheckBox chb = new CheckBox() { Name = string.Format("CheckBox{0}", i)};
+                                    
+                                }
+                                    if (taskInput != null)
+                                        taskOutput.Text = taskOutput.Text + "\n" + taskInput.Text;
+                                    Task1.Visibility = Visibility.Visible;
                                     deadlineOutput.Text = deadlineOutput.Text + "\n" + deadlineInput.Text;
+                                
+                            }
+
+                            private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+                            {
+                                this.Frame.Navigate(typeof(MainPage));
                             }
                         }
                     }
