@@ -76,5 +76,11 @@ namespace _4PLAN
                 this.Frame.Navigate(typeof(GoalsToMake));
         }
 
+        private void Classes_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame != null)
+                this.Frame.Navigate(typeof(ClassesPage1));
+        }
+
     }
 }

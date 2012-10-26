@@ -66,13 +66,14 @@
               
                             }
 
-                            
-
+                             
                             private void Button_Click_2(object sender, RoutedEventArgs e)
                             {
                                 for (int i = 0; i < 100; i++)
                                 {
-                                    CheckBox chb = new CheckBox() { Name = string.Format("CheckBox{0}", i)};
+                                    CheckBox chb = new CheckBox();
+                                    chb.Name = string.Format("Task{0}", i);
+                                   
                                     
                                 }
                                     if (taskInput != null)
@@ -82,7 +83,7 @@
                                 
                             }
 
-                            private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+                            private void GoHome(object sender, RoutedEventArgs e)
                             {
                                 this.Frame.Navigate(typeof(MainPage));
                             }
