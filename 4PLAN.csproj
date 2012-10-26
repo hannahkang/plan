@@ -115,8 +115,8 @@
     <Compile Include="Common\LayoutAwarePage.cs" />
     <Compile Include="Common\RichTextColumns.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
-    <Compile Include="Goals.xaml.cs">
-      <DependentUpon>Goals.xaml</DependentUpon>
+    <Compile Include="GoalsToMake.xaml.cs">
+      <DependentUpon>GoalsToMake.xaml</DependentUpon>
     </Compile>
     <Compile Include="ItemsPage1.xaml.cs">
       <DependentUpon>ItemsPage1.xaml</DependentUpon>
@@ -155,7 +155,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Goals.xaml">
+    <Page Include="GoalsToMake.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
